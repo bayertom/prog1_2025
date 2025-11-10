@@ -117,10 +117,11 @@ res = f2(3)
 #res = f2(4)
 
 #Find maximum
-X = [1, 9, 34, 70, 106, 127]
+X = [1, 9, 34, 17, -6, 27]
 max = maximum(X, 0, len(X)-1)
 print(max)
 
 #Find element, binary search
+X = [1, 9, 34, 70, 106, 127]
 idx = bSearch(X, 106, 0, len(X) - 1)
 print(idx)
