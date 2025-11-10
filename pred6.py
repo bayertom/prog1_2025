@@ -61,7 +61,7 @@ def comb2(n, k, funct):
     
     return fn / (fk * fnk)
 
-def f3(*X):
+def fsum(*X):
     sum = 0
     for x in X:
         sum = sum + x
@@ -132,5 +132,5 @@ k = 5
 c1 = comb(n,k)
 c2 = comb2(n, k, fact)
 
-#Positional arguments
-f3(1, 2, 3, 4, 5)
+#Positional arguments, compute sum
+fsum(1, 2, 3, 4, 5)
