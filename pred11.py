@@ -149,10 +149,9 @@ class GO:
 
 class PointGO(GO, Point):
     def __init__(self, color, style, x = 0, y = 0):
-        #GO.__init__(color, style)
-        #Point.__init__(x, y)
-        super().__init__(color, style)
-        super().__init__(x, y)
+        GO.__init__(self, color, style)
+        Point.__init__(self, x, y)
+
         
 class LineGO(GO):
     def __init__(self, color, style, s, e):
