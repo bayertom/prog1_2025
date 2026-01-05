@@ -39,7 +39,7 @@ class Point:
         self.__y = y
         
 #Algprithms
-class Algoritms:
+class Algorithms:
     
     def distance(p1, p2):
         dx = p1.x - p2.x
@@ -56,33 +56,10 @@ class Algoritms:
     def length(self, l):
         return self.distance2(l.s, l.e)
    
-
 p1 = Point()
 p1.print()
 p2 = Point(10, 10)
 p2.print()
-p3 = Point(20, 20)
-p3.print()
-p1.print()
-p1.x = 27
-p1.print()
-
-#Getter, setter
-x1 = p1.getX()
-p1.setX(8)
-p1.print()
-
-#Property
-x2 = p1.x
-p1.x = 25
-p1.print()
-
-#Passing objects + static call
-d1 = Algoritms.distance(p1, p2)
-
-#Passing objects + call
-a = Algoritms()
-d2 = a.distance2(p1, p2)
 
 #Composition
 class Line:
@@ -134,6 +111,7 @@ line = Line(s, e)
 line.print()
 
 #Compute length
+a = Algorithms ()
 length = a.length(line)
 print(length)
 
